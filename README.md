@@ -1,1 +1,161 @@
 # Studying-js
+
+Module-01
+
+Command Line Basics
+
+Basic Commands
+
+    cd - this means change directory
+    ls -l (mac), dir (windows) - this will list out all of the files and directories under the current directory
+    pwd - print working directory will give you something like /Users/wesbos/beginner-JavaScript/exercises
+    cd .. - go up a level in the current directory
+    
+Check that Node.js is working
+    
+    If you want to see if your Node.js is working, you can type NODE in ther terminal and that will give you a caret which will load up a REPL which is a read-eval-print loop.
+   
+Running and Loading JavaScript
+
+    in the browser console
+    in node
+    via a script tag
+    we can also have an external script.
+   
+Variables and Statements
+
+Variables are a building block of JavaScript, and you can't use JavaScript without knowing variables.
+
+We will cover what they are, what the different types of them are, what declaration means as well as what a statement is in JavaScript.
+
+There are three different ways to make a variable, which in JavaScript we refer to as declaring a variable. They are:
+
+    -var
+    -let
+    -const
+    
+Var= To make a variable you type var and then you make a name of the variable. 
+You can use almost anything for a variable name.
+
+ <body>
+  <script>
+    var first = 'wes';
+    console.log(first);
+  </script>
+</body>
+
+Let= he second way to declare a variable is with let.
+Below the declaration of the variable first.
+
+let age = 300;
+
+Const= The third way is with const. Below the age variable.
+
+const cool = true;
+
+Code Blocks
+
+One thing that we will run into in JavaScript is something called a code block.
+For example, add the following line of code to variables.html and refresh the page.
+
+Before
+
+if (age > 10) {
+  console.log("you are old");
+}
+
+After
+
+if (age > 10) {;
+  console.log("you are old");
+};
+
+That is because it's something that is referred to as a code block.
+
+Code blocks are things that are bound by these curly brackets { and }.
+
+Things like function definitions, if statements, loops do not need a semi-colon at the end because you aren't telling the computer to do something. In those instances, you are just running some code and telling the computer to do something inside of the block.
+
+Throughout the course Wes will continue to mention why we do and do not use the semi-colon so you can get the hang of it.
+
+Scoping
+
+Scoping in JavaScript answers the question "Where are my variables available to me?"
+
+We are going to have an entire section of this course focused on scoping because it's such a fundamental part of JavaScript, but for now we need to know that:
+
+    -var variables are scoped differently than let and const variables.
+    -var variables are what we refer to as function scoped variables (they are only available within the parent function).
+    -let and const variables are what we refer to as block scoped variables.
+
+Types 
+
+So far, we have just been assigning values to variables, such as numbers, text, true or false. What are all those things, and what are all of the different possible options that we have? These are referred to in JavaScript as Types.
+
+Anytime that you have a value (a value is something that can be stuck inside of a variable, or passed to a function), it will fall into 1 of the 7 JavaScript types.
+
+The types in JavaScript can be remembered using the word SNOB'N'US (just kidding, that is pretty hard to remember).
+
+The 7 different types in JavaScript are:
+
+    String - a string is anytime that you have some text (you will often see that in a single or double quote or a backtick.)
+    
+    Number - a number (regardless of whether it has a decimal place in it. Some programming languages have multiple types to deal with numbers, but JavaScript only has the one.)
+    
+    Object - this is a special one, we will go over this one last. Everything in JavaScript is an object, and we will understand what that is when we start to hit methods. Everything that we use like functions, dates, and arrays are just objects at the end of the day. All the other types except for object are referred to as the "primitive types".
+    
+    Boolean - true or false.
+    
+    Null - can be used to set a variable to nothing (we will discuss difference between undefined and null shortly).
+    
+    Undefined - can be used to set a variable to nothing (we will discuss difference between undefined and null shortly).
+    
+    Symbol - this is a new one to JavaScript, and it will always give us a guaranteed unique identifier. This is useful for when you are trying to come with a unique identifier inside of an object and you want to make sure you are not also overwriting something that already exists with that id.
+   
+JavaScript Comments
+
+//coment
+
+Difference between Single Quotes, Double Quotes and Backticks.
+
+What is the difference between single quotes, double quotes and backticks?
+
+Single quotes and double quotes are exactly the same thing.
+
+The only reason that we have them both is because if you had a sentence like const sentence = 'she's so cool';, it would break your JavaScript because the JavaScript interprets the apostrophe as closing the string.
+
+If you were to make that change, save the file and then refresh type.html, you will see an error that says.
+
+const sentence = `she's so "cool"`; exmpl
+
+Concatenation and Interpolation
+
+const hello = "hello my name is" + name + ". Nice to meet you.";
+
+But if you do "1" + "1", it will evaluate to "11".
+
+If you do "1" + 1, it will also evaluate to "11".
+
+1 + 1 = 2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
