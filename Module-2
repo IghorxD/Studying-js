@@ -1,0 +1,64 @@
+Module 02
+
+Functions - Built-in
+
+If you wanted to group all those statements together (generally they are related to each other and generally they produce some sort of output), you could group them together inside of a function.
+
+Functions can take in data, those are known as arguments (we will discuss the difference between arguments and parameters shortly). When you pass data to a function, it is known as an argument.
+
+Functions perform some work (a statement), and sometimes they also return a value.
+
+Let's look at an example in the console using Math.max() (this is actually a method, and we will explain the difference between a function and a method shortly, it is not much).
+
+If you run it in the console, it returns negative infinity.
+
+Math.max(10, 12) is a JavaScript statement. The values 10 and 12 that we are passing into the function are called arguments.
+
+If you are passing multiple values to a function, you need to separate each value with a comma and it's best practice to include a space between each.
+
+To repeat, the data that you pass to a function, the data that you give to a function in order for it to run is called an argument.
+
+Sometimes, functions will return to you some data that is generally the answer or the computed output based on what you passed in.
+
+For example, Math.floor(2.4444) will return 2.
+
+Here we are passing one argument of 2.4444 and it returns to us the floor of that value which is 2.
+
+Different Ways to Declare Functions
+
+One thing you will hear often when getting into JavaScript is that functions are "first class citizens".
+
+JavaScript functions are values in themselves, and they can be stored in variables and passed into other functions.
+
+What is a value in JavaScript?
+
+Arrow Functions
+
+The next way to make a function is using an arrow function.
+
+Arrow functions themselves have a few different ways of being declared. They are a newer addition to JavaScript, and were added in the last couple of years.
+
+They have a few benefits:
+
+    concise syntax and tend to be shorter. allow for writing one line functions
+    do not have their own scope in reference to the this keyword (we will cover the this keyword in a future video)
+
+Arrow functions are also anonymous functions, which means there is no way to declare an arrow function the way we do a function declaration function doctorize() {..}. You always have to stick it into a variable.
+
+Now we will go to the right of the parenthesis and add what is called a fat arrow =>.
+
+In programming, -> is referred to as a skinny arrow and => is referred to as a fat arrow.
+
+Implicit and Explicit Returns
+
+he next thing we will do is what is called an implicit return.
+
+An explicit return is when you type the return keyword before returning a value.
+
+That is an explicit return meaning that we explicitly return the value there.
+
+An implicit return is returning it without actually having to type the keyword return. Arrow functions allow us to use implicit returns.
+
+
+
+
