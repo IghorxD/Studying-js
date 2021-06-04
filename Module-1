@@ -170,7 +170,7 @@ We have Math.ceil() and that will give you the upper number.
 
 Then there is Math.random() which will give you a random number every time between 0 and 1 (in a future video we will go over how to get a random number between 1 and 10).
 
-
+The end!
 
 
 
