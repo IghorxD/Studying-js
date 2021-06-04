@@ -138,7 +138,37 @@ If you do "1" + 1, it will also evaluate to "11".
 
 1 + 1 = 2;
 
+Backticks
 
+To reiterate: you can do multiple lines with backticks, variable interpolation, and then there is something a little more advanced that is called a tagged template literal, but we are not going to get into that because we haven't got into functions just yet.
+
+Finally, this will be very helpful for creating HTML in our JavaScript code.
+
+const html = `
+  <div>
+    <h2>${name}</h2>
+    <p>${hello}</p>
+  </div>
+`;
+
+Helper Methods.
+
+There are four you are most likely to use.
+
+    Math.round()
+    Math.floor()
+    Math.ceil()
+    Math.random()
+
+Let's go through each one, starting with Math.round().
+
+To use Math.round(), you pass a value in between the parenthesis () (that is referred to as passing a value, which we will go over in a future video). It will return to you the number that was passed in, rounded up or down depending on the number.
+
+There is also Math.floor() which will give you the lower end of that number.
+
+We have Math.ceil() and that will give you the upper number.
+
+Then there is Math.random() which will give you a random number every time between 0 and 1 (in a future video we will go over how to get a random number between 1 and 10).
 
 
 
