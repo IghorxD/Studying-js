@@ -1,0 +1,53 @@
+Scope 
+
+We have touched on scope a few times throughout the course already because it's impossible to talk about variables without touching on scope.
+
+What is scope? Scope answers the question "where are my variables and functions available to me?".
+
+So far in the course, we have been making functions and variables and they have generally been available anywhere we wanted them. We have also seen some issues like when you create a variable inside of a function, and they're not available outside the function.
+
+That is what scope is.
+
+Global Variables
+
+We will start by taking about the first type of scope which are referred to as global variables.
+
+With global variables, whether you have a script tag, or javascript file, or run it in the console, anytime you declare a variable, it will be available anywhere in the application.
+
+For example, if you add in scope.js the following code const first = 'wes'; and then in the console type first, it will return the value of first.
+
+That does work, the console will log "wes".
+
+Why does it work?
+
+Because when you just go ahead and create a variable in a javascript file, not inside of a function, not inside of a module, not inside of an if statement, when you create it out in the open, that is what is referred to as a global variable.
+
+You can access global variables from any other javascript that is running on the page like a script tag or via the console.
+
+In the browser, the global scope is called the window.
+
+If you type window in the console, you will see every single thing that is attached to the global scope is inside of the window.
+
+Function Scoping
+
+This is the next type of scope which is called function scope.
+
+What function scope is, is when variables are created inside of a function, those variables are only ever available inside of that function.
+
+That means that anything we create inside of the go() function, is not available outside of that function, unless we were to explicitly return it and put it into it's own variable when that function is run.
+
+HoistingWe talked about this a little bit before.
+
+Now we will get into the details about what it is, when you can use it and why you might want to use it.
+
+Hoisting in JavaScript allows you to access functions and variables before they have been created.
+
+There are two things in JavaScript that are hoisted:
+
+    function declarations
+    variable declarations.
+    
+    
+
+
+
